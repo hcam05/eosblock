@@ -6,7 +6,7 @@ import Header from '../components/Header.js';
 import './App.css';
 import Eos from 'eosjs';
 
-const eos = Eos.Testnet({ httpEndpoint: 'http://t1readonly.eos.io' })
+const eos = Eos.Testnet({ httpEndpoint: 'https://t1readonly.eos.io' })
 
 class App extends Component {
   constructor(props) {
