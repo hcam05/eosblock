@@ -1,0 +1,46 @@
+.blockdata-allLines{
+  width: 75%;
+  margin: 2px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  align-self: center;
+  text-align: start;
+}
+
+.blockdata-fieldname{
+  font-weight: 900;
+}
+
+.blockdata-data{
+  font-weight: 300;
+}
+
+/*----MEDIA QUERIES----*/
+
+@media screen and (max-width: 1200px) {
+  .blockdata-allLines{
+    width: 700px;
+    word-wrap: break-word;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .blockdata-allLines{
+    width: 500px;
+    word-wrap: break-word;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .blockdata-allLines{
+    width: 400px;
+    word-wrap: break-word;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .blockdata-allLines{
+    width: 300px;
+    word-wrap: break-word;
+  } 
+}
