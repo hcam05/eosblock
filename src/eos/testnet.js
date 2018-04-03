@@ -1,6 +1,6 @@
 Eos = require('eosjs') // Eos = require('./src')
 
-eos = Eos.Testnet({httpEndpoint: 'http://t1readonly.eos.io'}) // testnet at eos.io
+eos = Eos.Testnet({httpEndpoint: 'https://t1readonly.eos.io'}) // testnet at eos.io
 
 const eosQueryLatestBlock = () => {
   eos.getInfo({}).then(result => {
