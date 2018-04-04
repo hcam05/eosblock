@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 
+// Components //
 import BlockInfo from '../components/BlockInfo.js';
 import Header from '../components/Header.js';
 
+// Styles //
 import '../styles/App.css';
-import Eos from 'eosjs';
 
-const eos = Eos.Testnet({ httpEndpoint: 'https://t1readonly.eos.io' })
+// EOS Libraries //
+import Eos from 'eosjs';
+const eos = Eos.Testnet({ httpEndpoint: 'https://t1readonly.eos.io' });
 
 class App extends Component {
   constructor(props) {
@@ -17,7 +20,6 @@ class App extends Component {
   }
 
   onClickHanlder() {
-    console.log('getting latest block!!!')
     //make api call
     eos.getInfo({}).then(result => {
       let blockNum = result.head_block_num;

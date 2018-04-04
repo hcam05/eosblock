@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Styles //
 import '../styles/Header.css';
 
 const Header = ({ loadData }) => {

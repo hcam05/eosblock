@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Styles //
 import '../styles/BlockInfo.css';
 
 const BlockInfo = ({ data }) => {
