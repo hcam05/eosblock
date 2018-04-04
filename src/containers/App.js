@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import BlockInfo from '../components/BlockInfo.js';
 import Header from '../components/Header.js';
 
-import './App.css';
+import '../styles/App.css';
 import Eos from 'eosjs';
 
 const eos = Eos.Testnet({ httpEndpoint: 'https://t1readonly.eos.io' })
@@ -19,15 +19,14 @@ class App extends Component {
   onClickHanlder() {
     console.log('getting latest block!!!')
     //make api call
-    //catch errors
-    //set state to response
     eos.getInfo({}).then(result => {
       let blockNum = result.head_block_num;
-      // console.log(result);
       eos.getBlock(blockNum).then(result => {
-        // console.log(result)
-        this.setState({ blockData: { ...result } }, console.log(this.state.blockData))
+        //set state to response
+        this.setState({ blockData: { ...result } })
       })
+      //catch errors
+      .catch(error => console.log(error));
     });
   }
 

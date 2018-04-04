@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './BlockInfo.css';
+import '../styles/BlockInfo.css';
 
 const BlockInfo = ({ data }) => {
   let block = null;
