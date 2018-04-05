@@ -4,7 +4,11 @@ Quick and simple React App to load lastest data from the EOS Testnet blockchain.
 
 ## Getting Started
 
-Click the "Load Block" Button to view the lastest block info from the EOS Testnet Blockchain.
+[EOS Block](https://eosblock.herokuapp.com/)
+
+* Visit the link above to visit the live app. 
+
+* Click the "Load Block" Button to view the lastest block info from the EOS Testnet Blockchain.
 
 ## Built With
 
