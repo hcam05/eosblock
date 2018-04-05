@@ -17,4 +17,4 @@ Click the "Load Block" Button to view the lastest block info from the EOS Testne
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/hcam05/eosblock/blob/master/LICENSE) file for details
